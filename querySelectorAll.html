@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> DOM - querySelectorAll</title>
+
+</head>
+
+<body>
+    <div class="teste">1</div>
+    <div class="teste">2</div>
+    <div class="teste">3</div>
+
+    <div id="pai">
+            <div class="filho">1</div>
+            <div class="filho">2</div>
+            <div class="filho">3</div>
+    </div>
+    <div id="paizao">
+            <div class="filho">novo</div>
+            <div class="filho">filhao</div>
+            <div class="filho">do paizao</div>
+    </div>
+
+    <p>oi</p>
+    <p>Olá</p>
+
+    <script>
+        //. para verificar uma classe
+        
+            //document.querySelectorAll(".teste")
+            //document.getElementById("paizao").querySelectorAll(".filho")[0].innerHTML
+            if (document.getElementById("pai").querySelectorAll(".filho").length > 1)
+                console.log("oi");
+        
+    </script>
+
+</body>

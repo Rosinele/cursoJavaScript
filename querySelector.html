@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+    <head>  
+        <meta charset="UTF-8">
+        
+        <title>DOM - querySelector</title>
+        
+    </head>
+    <body> 
+        <!-- querySelect equivale ao getElementById, getElementByClassName e getElementByTagName juntos-->
+
+        <div id="primeiraDiv">1</div>
+        <div class="segundaDiv">2</div>
+        <div class="segundaDiv">22</div>
+        <div class="segundaDiv">222</div>
+        <p class="teste3"> ultimo teste</p>
+
+        <script>
+            //# acessa id
+            //. acessa class
+            //p acessa o parágrafo
+            
+           console.log(
+               document.querySelector(".segundaDiv") //Só mostra a primeira Div
+           )
+        </script>
+
+    </body>
+
+</html>
